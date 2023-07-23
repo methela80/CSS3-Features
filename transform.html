@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform & Translate</title>
+    <style>
+        body{
+            margin-left: 100px;
+        }
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 2px solid steelblue;
+            background:lightcyan;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            border: 3px solid plum;
+            background: fuchsia;
+            /* transform: scale(.25, 0.5); */
+            /* transform: rotate(45deg); */
+            /* transform: rotate(-45deg); (anti clock wise gurby) */
+            /* transform: scale(0.5) rotate(45deg) translateX(100px) translateY(-90px); */
+            /* transform: translateX(50px); */
+        }
+        .inner:hover{
+            transform:translateY(-150px) scale(0.5) rotate(70deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore transform and translate</h1>
+
+    <div class="container">
+        <div class="inner">Rio</div>
+    </div>
+
+    <div class="container">
+        <div class="inner">Pio</div>
+    </div>
+
+    <div class="container">
+        <div class="inner">Tio</div>
+    </div>
+    
+</body>
+</html>
